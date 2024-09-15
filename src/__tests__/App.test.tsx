@@ -13,6 +13,6 @@ test('renders welcome message and learn more button', () => {
   expect(learnMoreButton).toBeInTheDocument();
 
   // Intentionally fail the test
-  const nonExistentElement = screen.getByText(/This text does not exist/i);
-  expect(nonExistentElement).toBeInTheDocument();
+  // const nonExistentElement = screen.getByText(/This text does not exist/i);
+  // expect(nonExistentElement).toBeInTheDocument();
 });

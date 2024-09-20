@@ -11,4 +11,8 @@ test('renders welcome message and learn more button', () => {
 
   const learnMoreButton = screen.getByText(/Learn More/i);
   expect(learnMoreButton).toBeInTheDocument();
+
+  // Intentionally fail the test
+  // const nonExistentElement = screen.getByText(/This text does not exist/i);
+  // expect(nonExistentElement).toBeInTheDocument();
 });

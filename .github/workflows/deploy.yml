@@ -1,0 +1,21 @@
+
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: "Build Docker image"
+      run: docker build . -t alihamxa/web-react
+      run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
+      run: docker push alihamxa/web-react:latest
+
+  

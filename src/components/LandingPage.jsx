@@ -39,6 +39,10 @@ https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=fo
           <div className={styles.serviceCard}>App Development</div>
           <div className={styles.serviceCard}>Cloud Solutions</div>
           <div className={styles.serviceCard}>Cybersecurity</div>
+          <div className={styles.serviceCard}>Web Development</div>
+          <div className={styles.serviceCard}>App Development</div>
+          <div className={styles.serviceCard}>Cloud Solutions</div>
+          <div className={styles.serviceCard}>Cybersecurity</div>
         </div>
       </section>
     </div>
